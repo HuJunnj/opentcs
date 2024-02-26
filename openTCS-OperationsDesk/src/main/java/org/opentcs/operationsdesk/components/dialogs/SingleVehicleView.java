@@ -142,7 +142,7 @@ public class SingleVehicleView
     updateVehicleIntegrationLevel();
     updateVehicleState();
     updateVehiclePosition();
-    updateEnergyLevel();
+    //updateEnergyLevel();
     updateVehicleDestination();
 
     revalidate();
@@ -211,7 +211,7 @@ public class SingleVehicleView
   }
 
   private void updateEnergyLevel() {
-    batteryLabel.setText(fVehicleModel.getPropertyEnergyLevel().getValue() + " %");
+    //batteryLabel.setText(fVehicleModel.getPropertyEnergyLevel().getValue() + " %");
     Vehicle vehicle = fVehicleModel.getVehicle();
 
     if (vehicle.isEnergyLevelCritical()) {
@@ -287,13 +287,13 @@ public class SingleVehicleView
     batteryPanel.setLayout(new java.awt.GridBagLayout());
     batteryPanel.add(batteryIcon, new java.awt.GridBagConstraints());
 
-    batteryLabel.setText("battery");
+    /*batteryLabel.setText("battery");
     batteryLabel.setPreferredSize(new java.awt.Dimension(45, 14));
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 1;
     gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
-    batteryPanel.add(batteryLabel, gridBagConstraints);
+    batteryPanel.add(batteryLabel, gridBagConstraints);*/
 
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 1;

@@ -158,7 +158,7 @@ public class PlantModelElementConverter {
                                                    SpeedProperty.Unit.MM_S);
     model.getPropertyMaxReverseVelocity().setValueAndUnit(
         ((double) vehicleTO.getMaxReverseVelocity()), SpeedProperty.Unit.MM_S);
-    model.getPropertyEnergyLevelCritical().setValueAndUnit(vehicleTO.getEnergyLevelCritical(),
+    /*model.getPropertyEnergyLevelCritical().setValueAndUnit(vehicleTO.getEnergyLevelCritical(),
                                                            PercentProperty.Unit.PERCENT);
     model.getPropertyEnergyLevelGood().setValueAndUnit(vehicleTO.getEnergyLevelGood(),
                                                        PercentProperty.Unit.PERCENT);
@@ -167,7 +167,7 @@ public class PlantModelElementConverter {
     );
     model.getPropertyEnergyLevelSufficientlyRecharged().setValueAndUnit(
         vehicleTO.getEnergyLevelSufficientlyRecharged(), PercentProperty.Unit.PERCENT
-    );
+    );*/
 
     model.getPropertyEnvelopeKey().setText(vehicleTO.getEnvelopeKey());
 

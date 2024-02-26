@@ -46,20 +46,20 @@ public class VehicleModel
   /**
    * The name/key of the 'energy level critical' property.
    */
-  public static final String ENERGY_LEVEL_CRITICAL = "EnergyLevelCritical";
+  //public static final String ENERGY_LEVEL_CRITICAL = "EnergyLevelCritical";
   /**
    * The name/key of the 'energy level good' property.
    */
-  public static final String ENERGY_LEVEL_GOOD = "EnergyLevelGood";
+  //public static final String ENERGY_LEVEL_GOOD = "EnergyLevelGood";
   /**
    * The name/key of the 'energy level fully recharged' property.
    */
-  public static final String ENERGY_LEVEL_FULLY_RECHARGED = "EnergyLevelFullyRecharged";
+  //public static final String ENERGY_LEVEL_FULLY_RECHARGED = "EnergyLevelFullyRecharged";
   /**
    * The name/key of the 'energy level sufficiently recharged' property.
    */
-  public static final String ENERGY_LEVEL_SUFFICIENTLY_RECHARGED
-      = "EnergyLevelSufficientlyRecharged";
+  /*public static final String ENERGY_LEVEL_SUFFICIENTLY_RECHARGED
+      = "EnergyLevelSufficientlyRecharged";*/
   /**
    * The name/key of the 'loaded' property.
    */
@@ -99,7 +99,7 @@ public class VehicleModel
   /**
    * The name/key of the 'energy level' property.
    */
-  public static final String ENERGY_LEVEL = "EnergyLevel";
+  /*public static final String ENERGY_LEVEL = "EnergyLevel";*/
   /**
    * The name/key of the 'current transport order name' property.
    */
@@ -414,25 +414,25 @@ public class VehicleModel
     return (SpeedProperty) getProperty(MAXIMUM_REVERSE_VELOCITY);
   }
 
-  public PercentProperty getPropertyEnergyLevelCritical() {
+  /*public PercentProperty getPropertyEnergyLevelCritical() {
     return (PercentProperty) getProperty(ENERGY_LEVEL_CRITICAL);
-  }
+  }*/
 
-  public PercentProperty getPropertyEnergyLevelGood() {
+  /*public PercentProperty getPropertyEnergyLevelGood() {
     return (PercentProperty) getProperty(ENERGY_LEVEL_GOOD);
-  }
+  }*/
 
-  public PercentProperty getPropertyEnergyLevelFullyRecharged() {
+ /* public PercentProperty getPropertyEnergyLevelFullyRecharged() {
     return (PercentProperty) getProperty(ENERGY_LEVEL_FULLY_RECHARGED);
-  }
+  }*/
 
-  public PercentProperty getPropertyEnergyLevelSufficientlyRecharged() {
+  /*public PercentProperty getPropertyEnergyLevelSufficientlyRecharged() {
     return (PercentProperty) getProperty(ENERGY_LEVEL_SUFFICIENTLY_RECHARGED);
-  }
+  }*/
 
-  public PercentProperty getPropertyEnergyLevel() {
+  /*public PercentProperty getPropertyEnergyLevel() {
     return (PercentProperty) getProperty(ENERGY_LEVEL);
-  }
+  }*/
 
   @SuppressWarnings("unchecked")
   public SelectionProperty<Vehicle.State> getPropertyState() {
@@ -488,7 +488,7 @@ public class VehicleModel
   public StringProperty getPropertyEnvelopeKey() {
     return (StringProperty) getProperty(ENVELOPE_KEY);
   }
-  
+
   public KeyValueSetProperty getPropertyMiscellaneous() {
     return (KeyValueSetProperty) getProperty(MISCELLANEOUS);
   }
@@ -517,7 +517,7 @@ public class VehicleModel
     pColor.setHelptext(bundle.getString("vehicleModel.property_routeColor.helptext"));
     setProperty(ElementPropKeys.VEHICLE_ROUTE_COLOR, pColor);
 
-    PercentProperty pEnergyLevelCritical = new PercentProperty(this,
+    /*PercentProperty pEnergyLevelCritical = new PercentProperty(this,
                                                                30,
                                                                PercentProperty.Unit.PERCENT,
                                                                true);
@@ -564,7 +564,7 @@ public class VehicleModel
     pEnergyLevelSufficientlyRecharged.setHelptext(
         bundle.getString("vehicleModel.property_energyLevelSufficientlyRecharged.helptext")
     );
-    setProperty(ENERGY_LEVEL_SUFFICIENTLY_RECHARGED, pEnergyLevelSufficientlyRecharged);
+    setProperty(ENERGY_LEVEL_SUFFICIENTLY_RECHARGED, pEnergyLevelSufficientlyRecharged);*/
 
     SpeedProperty pMaximumVelocity = new SpeedProperty(this, 1000, SpeedProperty.Unit.MM_S);
     pMaximumVelocity.setDescription(
@@ -584,11 +584,11 @@ public class VehicleModel
     );
     setProperty(MAXIMUM_REVERSE_VELOCITY, pMaximumReverseVelocity);
 
-    PercentProperty pEnergyLevel = new PercentProperty(this, true);
+    /*PercentProperty pEnergyLevel = new PercentProperty(this, true);
     pEnergyLevel.setDescription(bundle.getString("vehicleModel.property_energyLevel.description"));
     pEnergyLevel.setHelptext(bundle.getString("vehicleModel.property_energyLevel.helptext"));
     pEnergyLevel.setModellingEditable(false);
-    setProperty(ENERGY_LEVEL, pEnergyLevel);
+    setProperty(ENERGY_LEVEL, pEnergyLevel);*/
 
     BooleanProperty pLoaded = new BooleanProperty(this);
     pLoaded.setDescription(bundle.getString("vehicleModel.property_loaded.description"));
@@ -675,7 +675,7 @@ public class VehicleModel
     pEnvelopeKey.setModellingEditable(true);
     pEnvelopeKey.setOperatingEditable(false);
     setProperty(ENVELOPE_KEY, pEnvelopeKey);
-    
+
     KeyValueSetProperty pMiscellaneous = new KeyValueSetProperty(this);
     pMiscellaneous.setDescription(
         bundle.getString("vehicleModel.property_miscellaneous.description")

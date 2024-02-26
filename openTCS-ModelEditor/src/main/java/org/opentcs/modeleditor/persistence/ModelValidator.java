@@ -394,7 +394,7 @@ public class ModelValidator {
     }
 
     //Validate the critical energy level
-    PercentProperty energyCriticalProperty
+    /*PercentProperty energyCriticalProperty
         = (PercentProperty) vehicle.getProperty(VehicleModel.ENERGY_LEVEL_CRITICAL);
     if (((int) energyCriticalProperty.getValue()) < 0
         || ((int) energyCriticalProperty.getValue()) > 100) {
@@ -437,7 +437,7 @@ public class ModelValidator {
       LOG.warn("{}: Energy level is {} but has to be in range of [0..100]. Setting it to 50.");
       energyLevelProperty.setValueAndUnit(50, PercentProperty.Unit.PERCENT);
       vehicle.setProperty(VehicleModel.ENERGY_LEVEL, energyLevelProperty);
-    }
+    }*/
 
     //Validate the precise position happens in the property converter
     AngleProperty orientationProperty

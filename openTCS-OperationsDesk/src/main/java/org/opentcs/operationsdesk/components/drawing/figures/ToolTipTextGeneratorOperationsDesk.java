@@ -161,10 +161,10 @@ public class ToolTipTextGeneratorOperationsDesk
         .append('\n');
 
     sb.append("<br>\n");
-    sb.append(model.getPropertyEnergyLevel().getDescription())
+    /*sb.append(model.getPropertyEnergyLevel().getDescription())
         .append(": <font color=").append(energyColorString(model.getVehicle())).append(">")
         .append(model.getPropertyEnergyLevel().getValue())
-        .append("%</font>\n");
+        .append("%</font>\n");*/
   }
 
   private String energyColorString(Vehicle vehicle) {

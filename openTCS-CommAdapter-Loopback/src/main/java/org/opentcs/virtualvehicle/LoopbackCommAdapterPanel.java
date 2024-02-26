@@ -666,14 +666,14 @@ public class LoopbackCommAdapterPanel
     gridBagConstraints.insets = new java.awt.Insets(3, 0, 0, 0);
     curPosPanel.add(orientationAngleTxt, gridBagConstraints);
 
-    energyLevelLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+    /*energyLevelLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
     energyLevelLabel.setText(bundle.getString("loopbackCommAdapterPanel.label_energyLevel.text")); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 2;
     gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
     gridBagConstraints.insets = new java.awt.Insets(3, 3, 0, 3);
-    curPosPanel.add(energyLevelLabel, gridBagConstraints);
+    curPosPanel.add(energyLevelLabel, gridBagConstraints);*/
 
     orientationLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
     orientationLabel.setText(bundle.getString("loopbackCommAdapterPanel.label_orientationAngle.text")); // NOI18N
