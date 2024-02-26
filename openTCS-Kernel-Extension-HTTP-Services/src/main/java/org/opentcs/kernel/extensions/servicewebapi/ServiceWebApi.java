@@ -134,7 +134,7 @@ public class ServiceWebApi
         });
 
     // Register routes for API versions here.
-    service.path("/v1", () -> v1RequestHandler.addRoutes(service));
+    service.path("/gbt", () -> v1RequestHandler.addRoutes(service));
 
     service.exception(IllegalArgumentException.class, (exception, request, response) -> {
                     response.status(400);

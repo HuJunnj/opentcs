@@ -60,7 +60,7 @@ public class AdminWebApi
         .ipAddress(configuration.bindAddress())
         .port(configuration.bindPort());
 
-    service.path("/v1", () -> {
+    service.path("/gbt", () -> {
                service.get("/version", v1RequestHandler::handleGetVersion);
                service.get("/status", v1RequestHandler::handleGetStatus);
                service.delete("/kernel", v1RequestHandler::handleDeleteKernel);

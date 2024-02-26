@@ -21,7 +21,7 @@ info:
   version: 1.3.0
   title: openTCS web API specification
 servers:
-  - url: http://localhost:55200/v1
+  - url: http://localhost:55200/gbt
     description: openTCS kernel running on localhost
 tags:
   - name: Transport orders

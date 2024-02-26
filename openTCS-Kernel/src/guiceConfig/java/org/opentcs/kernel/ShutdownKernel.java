@@ -34,7 +34,7 @@ public class ShutdownKernel {
     int port = args.length > 1 ? Integer.parseInt(args[1]) : 55001;
 
     try {
-      URL url = new URL("http", hostName, port, "/v1/kernel");
+      URL url = new URL("http", hostName, port, "/gbt/kernel");
       System.err.println("Calling to " + url + "...");
       HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
       httpCon.setRequestMethod("DELETE");
